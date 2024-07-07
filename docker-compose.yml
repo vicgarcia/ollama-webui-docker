@@ -1,0 +1,28 @@
+name: chat
+
+services:
+
+  webui:
+    image: ghcr.io/open-webui/open-webui:main
+    restart: unless-stopped
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+    ports:
+      - 8080:8080
+    volumes:
+      - ./webui:/app/backend/data
+
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    runtime: nvidia
+    ports:
+      - 11434:11434
+    volumes:
+      - ./ollama:/root/.ollama
+
+networks:
+
+  default:
+    name: chat
+    external: false
