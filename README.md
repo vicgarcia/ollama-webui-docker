@@ -1,8 +1,6 @@
-I've been using [Ollama](https://ollama.com) to run LLMs for development with Visual Studio Code and the [Continue](https://www.continue.dev) extension and for some experiments with [LangChain](https://github.com/langchain-ai/langchain).
+I've been using [Ollama](https://ollama.com) to run LLMs for development with Visual Studio Code and the [Continue](https://www.continue.dev) extension and some other experiments.
 
-I've had success installing Ollama using both the [MacOS](https://ollama.com/download/mac) application as well as the [Linux](https://ollama.com/download/linux) installer.
-
-I wanted to expose a user interface for some non-coding usecases and found [Open WebUI](https://docs.openwebui.com).
+I've had success installing Ollama using both the [MacOS](https://ollama.com/download/mac) application as well as the [Linux](https://ollama.com/download/linux) installer. This works to get the API up and running for use with Continue, or for calling from a Jupyter notebook. But for more casual and non-coding use, I wanted to expose a user interface and found [Open WebUI](https://docs.openwebui.com).
 
 I'm running this on a [Debian 12](https://www.debian.org/releases/bookworm/) server with a Nvidia 3090 with 24GB of RAM. You will need a similar linux server with a Nvidia GPU and Cuda installed and configured properly.
 
