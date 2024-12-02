@@ -27,3 +27,15 @@ While it's possible to pull models from the WebUI, I prefer doing so via the ter
 ```
 docker compose exec -it ollama ollama pull <model>
 ```
+
+Now that Ollama is running, interact with the API using the `ollama` python library<br/>
+https://github.com/ollama/ollama-python
+
+Create a virtual environment and install dependencies
+```
+python3 -m venv venv
+./venv/bin/pip install -U pip
+./venv/bin/pip install ipykernel ollama pillow
+```
+
+Run the notebook to see examples.
